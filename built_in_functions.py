@@ -20,3 +20,16 @@ For custom objects:
 If your object implements the __abs__() method, abs() will call that method
 
 """
+
+# Integers
+abs(5)      # Returns 5
+abs(-5)     # Returns 5
+abs(0)      # Returns 0
+
+# Floating-point numbers
+abs(3.14)   # Returns 3.14
+abs(-3.14)  # Returns 3.14
+
+# Complex numbers
+print(abs(3 + 4j))  # Returns 5.0 (√(3² + 4²) = √(9 + 16) = √25 = 5)
+
