@@ -52,14 +52,14 @@ print(type(numberType))
 Turns numbers into floats
 output 17.0
 """
-print(float(17))
+print(float(19))
 
 #int()
 """
 Turns numbers into integers
 output = 15
 """
-print(int(15.6))
+print(int(31.6))
 
 #round()
 """
@@ -74,3 +74,22 @@ print(round(15.3))
 """
 Turns numbers into floats
 """
+print(float(49))
+
+#len()
+"""
+
+Return the length (the number of items) of an object.
+The argument may be a sequence (such as a string, bytes, tuple,
+list, or range) or a collection (such as a dictionary, set, or frozen set).
+This is good for small lists
+
+"""
+
+arrayList = [1,2,3,4,5]
+
+print(len(arrayList))
+
+#The index numbers help us retrieve individual elements from a list. Looking back at the list row_1 from the code example above, we can retrieve the first element (the string 'Facebook') with the index number 0 by running the code print(row_1[0]).
+row_1 = ['Facebook', 0.0, 'USD', 2974676, 3.5]
+print(row_1[0])
