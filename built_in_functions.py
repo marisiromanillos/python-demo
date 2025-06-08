@@ -33,3 +33,22 @@ abs(-3.14)  # Returns 3.14
 # Complex numbers
 print(abs(3 + 4j))  # Returns 5.0 (√(3² + 4²) = √(9 + 16) = √25 = 5)
 
+#type()
+
+"""
+
+Type Objects represents the various objects types.
+
+There are no special operations on types - type() defines names for all
+
+standard built-in types
+
+"""
+numberType = 5
+print(type(numberType))
+
+#float()
+"""
+Turns numbers into floats
+"""
+print(float(17))
