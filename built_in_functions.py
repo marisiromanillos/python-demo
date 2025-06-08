@@ -93,3 +93,12 @@ print(len(arrayList))
 #The index numbers help us retrieve individual elements from a list. Looking back at the list row_1 from the code example above, we can retrieve the first element (the string 'Facebook') with the index number 0 by running the code print(row_1[0]).
 row_1 = ['Facebook', 0.0, 'USD', 2974676, 3.5]
 print(row_1[0])
+
+row_1 = ['Facebook', 0.0, 'USD', 2974676, 3.5]
+row_2 = ['Instagram', 0.0, 'USD', 2161558, 4.5]
+
+difference = row_2[4] - row_1[4]
+average_rating = (row_1[4] + row_2[4]) / 2
+
+print(difference)
+print(average_rating)
