@@ -50,5 +50,27 @@ print(type(numberType))
 #float()
 """
 Turns numbers into floats
+output 17.0
 """
 print(float(17))
+
+#int()
+"""
+Turns numbers into integers
+output = 15
+"""
+print(int(15.6))
+
+#round()
+"""
+Turns numbers into round numbers
+output = 16
+output = 15
+"""
+print(round(15.6))
+print(round(15.3))
+
+#float()
+"""
+Turns numbers into floats
+"""
