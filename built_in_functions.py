@@ -102,3 +102,5 @@ average_rating = (row_1[4] + row_2[4]) / 2
 
 print(difference)
 print(average_rating)
+
+#to abstract date instead of using row[0], row[1], row[2], we can use a syntax shortcut [0:3]
