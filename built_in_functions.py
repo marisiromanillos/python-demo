@@ -113,5 +113,12 @@ print(slicePartially)
 row_b = ['Instagram', 0.0, 'USD', 2974676, 3.5]
 sliceFirst3 = row_b[:3]
 print(sliceFirst3)
+#['Instagram', 0.0, 'USD']
+
 sliceFromLastsIndex = row_b[3:]
 print(sliceFromLastsIndex)
+#[2974676, 3.5]
+
+slicelast3 = row_b[-3:]
+print(slicelast3)
+#['USD', 2974676, 3.5]
