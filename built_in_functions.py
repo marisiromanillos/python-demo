@@ -122,3 +122,50 @@ print(sliceFromLastsIndex)
 slicelast3 = row_b[-3:]
 print(slicelast3)
 #['USD', 2974676, 3.5]
+
+#we can store our five variables in a single list:
+
+row_1 = ['Facebook', 0.0, 'USD', 2974676, 3.5]
+row_2 = ['Instagram', 0.0, 'USD', 2161558, 4.5]
+row_3 = ['Clash of Clans', 0.0, 'USD', 2130805, 4.5]
+row_4 = ['Temple Run', 0.0, 'USD', 1724546, 4.5]
+row_5 = ['Pandora - Music & Radio', 0.0, 'USD', 1126879, 4.0]
+
+data_set = [row_1, row_2, row_3, row_4, row_5]
+print(data_set)
+print(data_set[0])
+print(data_set[3])
+print(data_set[1])
+
+'''
+
+outputs the 4 index from  index 0 (row_1)
+row_1 = ['Facebook', 0.0, 'USD', 2974676, 3.5]
+3.5
+
+'''
+print(data_set[0][4])
+
+'''
+
+Group the five lists together in a list of lists. Assign the resulting list of lists to a variable named app_data_set.
+Compute the average rating of the apps by retrieving the right data points from the app_data_set list of lists.
+
+'''
+
+row_1 = ['Facebook', 0.0, 'USD', 2974676, 3.5]
+row_2 = ['Instagram', 0.0, 'USD', 2161558, 4.5]
+row_3 = ['Clash of Clans', 0.0, 'USD', 2130805, 4.5]
+row_4 = ['Temple Run', 0.0, 'USD', 1724546, 4.5]
+row_5 = ['Pandora - Music & Radio', 0.0, 'USD', 1126879, 4.0]
+
+app_data_set = [row_1, row_2, row_3, row_4, row_5]
+list_of_lists = row_1[4] + row_2[4] + row_3[4] + row_4[4] + row_5[4]
+print(list_of_lists)
+avg_rating = list_of_lists / 5
+print(avg_rating)
+#output sum 21
+#output division 4.2
+
+
+
