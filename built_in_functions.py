@@ -104,3 +104,14 @@ print(difference)
 print(average_rating)
 
 #to abstract date instead of using row[0], row[1], row[2], we can use a syntax shortcut [0:3]
+
+row_a = ['Facebook', 0.0, 'USD', 2974676, 3.5]
+slicePartially = row_a[0:3]
+print(slicePartially)
+#output ['Facebook', 0.0, 'USD']
+
+row_b = ['Instagram', 0.0, 'USD', 2974676, 3.5]
+sliceFirst3 = row_b[:3]
+print(sliceFirst3)
+sliceFromLastsIndex = row_b[3:]
+print(sliceFromLastsIndex)
