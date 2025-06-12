@@ -167,5 +167,75 @@ print(avg_rating)
 #output sum 21
 #output division 4.2
 
+#open()
 
+'''
 
+The open() function opens a file, and returns it as a file object.
+
+The type of file object returned by the open() function depends on the mode. When open() is used to open a file in a text mode ('w', 'r', 'wt', 'rt', etc.), it returns a subclass of io.TextIOBase (specifically io.TextIOWrapper). When used to open a file in a binary mode with buffering, the returned class is a subclass of io.BufferedIOBase. The exact class varies: in read binary mode, it returns an io.BufferedReader; in write binary and append binary modes, it returns an io.BufferedWriter, and in read/write mode, it returns an io.BufferedRandom. When buffering is disabled, the raw stream, a subclass of io.RawIOBase, io.FileIO, is returned.
+
+syntax -> open(file, mode)
+file The path and name of the file
+mode A string, define which mode you want to open the file in
+
+"r" - Read - Default value. Opens a file for reading, error if the file does not exist
+
+"a" - Append - Opens a file for appending, creates the file if it does not exist
+
+"w" - Write - Opens a file for writing, creates the file if it does not exist
+
+"x" - Create - Creates the specified file, returns an error if the file exist
+
+In addition you can specify if the file should be handled as binary or text mode
+
+"t" - Text - Default value. Text mode
+
+"b" - Binary - Binary mode (e.g. images)
+
+'''
+
+#open() example
+
+'''
+opened_file = open('AppleStore.csv')
+print(opened_file)
+
+Output
+<_io.TextIOWrapper name='AppleStore.csv' mode='r' encoding='UTF-8'>
+
+'''
+
+#read()
+
+'''
+
+The open() function returns a file object, which has read() method for reading the content of the file
+
+opened_file.read() -> returns a string
+
+example: The command opened_file.read() returned a string which we assigned to read_file. Let's take a look at its first 300 characters. To do this we'll use slices like we did on lists. It also work on strings!
+opened_file = open('AppleStore.csv')
+
+read_file = opened_file.read()
+print(read_file[:300])
+
+output
+id,track_name,size_bytes,currency,price,rating_count_tot,rating_count_ver,user_rating,user_rating_ver,ver,cont_rating,prime_genre,sup_devices.num,ipadSc_urls.num,lang.num,vpp_lic
+284882215,Facebook,389879808,USD,0.0,2974676,212,3.5,3.5,95.0,4+,Social Networking,37,1,29,1
+389801252,Instagram,11395481
+
+'''
+
+#close()
+
+'''
+
+To close a file we use the close() command, with the same syntax as read()
+
+opened_file = open('AppleStore.csv')
+read_file = opened_file.read()
+print(read_file[:300])
+opened_file.close()
+
+'''
