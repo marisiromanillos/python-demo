@@ -239,3 +239,22 @@ print(read_file[:300])
 opened_file.close()
 
 '''
+
+
+
+#split()
+
+'''
+
+To work on a list of lists we can use split()
+
+opened_file = open('AppleStore.csv')
+read_file = opened_file.read()
+new_line_split = read_file.split("\n")
+print(new_line_split[:5])
+
+Output
+['id,track_name,size_bytes,currency,price,rating_count_tot,rating_count_ver,user_rating,user_rating_ver,ver,cont_rating,prime_genre,sup_devices.num,ipadSc_urls.num,lang.num,vpp_lic', '284882215,Facebook,389879808,USD,0.0,2974676,212,3.5,3.5,95.0,4+,Social Networking,37,1,29,1', '389801252,Instagram,113954816,USD,0.0,2161558,1289,4.5,4.0,10.23,12+,Photo & Video,37,0,29,1', '529479190,Clash of Clans,116476928,USD,0.0,2130805,579,4.5,4.5,9.24.12,9+,Games,38,5,18,1', '420009108,Temple Run,65921024,USD,0.0,1724546,3842,4.5,4.0,1.6.2,9+,Games,40,5,1,1']
+
+'''
+
