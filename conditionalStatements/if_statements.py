@@ -12,3 +12,8 @@ for row in apps_data[1:]:
     rating = float(row[7])
     print(rating)
     # Complete the code from here
+
+"""
+What's the average rating of non-free apps?
+What's the average rating of free apps?
+"""
