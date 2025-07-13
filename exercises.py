@@ -314,3 +314,7 @@ Build a mini-ORM or DSL using metaclasses and descriptors.
 Open-Source Contribution
 Identify a popular Python project, fork it, submit a non-trivial PR, and document the entire process.
 '''
+
+# Print hello world 
+
+print("Hello world")
